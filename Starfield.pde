@@ -66,7 +66,8 @@ class OddballParticle extends Particle
       ellipse((int)myX,(int)myY,5,5);
     }
     void reset() {
-      myX = myY = 200;
+      myX = mouseX;
+      myY = mouseY;
       myAngle = Math.random()*(2*Math.PI);
       mySpeed=Math.random()*5;
     }
